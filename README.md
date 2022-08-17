@@ -79,6 +79,12 @@ des points de suspension. Un exemple de l’effet attendu est fourni.
 
 Ajouter un commit
 
-git add .
-git commit -m “[descriptive message]”
+git add . 
+git commit -m “[descriptive message]” 
 git push origin main
+
+
+Supprimer repo origin
+
+git remote rm origin
+
