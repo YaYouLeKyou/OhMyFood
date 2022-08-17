@@ -1,7 +1,3 @@
-# ohmyfood
-
-Projet 3 "Ohmyfood", Openclassrooms.
-
 # Ohmyfood
 
 Troisième projet du parcours développeur web chez OpenClassrooms : "Dynamisez une page web avec des animations CSS"
