@@ -12,8 +12,8 @@
     "url": ""
   },
   "author": "yayou",
-  "license": "",
-  "browserlist": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": ""
   },

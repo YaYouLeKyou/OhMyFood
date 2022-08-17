@@ -54,13 +54,11 @@ body {
   padding: 40px 40px;
   margin-bottom: 50px;
 }
-.presentation__book {
+.presentation__title {
   font-weight: bold;
   font-size: 25px;
 }
-.presentation__explore {
-  padding: 0.75rem 1.5rem;
-  border-radius: 30px;
+.presentation__sub-title {
   text-align: center;
   color: #FFF;
   font-weight: normal;
@@ -70,10 +68,70 @@ body {
   background-image: linear-gradient(#FF79DA, #9356DC);
   transition: background-color 250ms;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  transition: 1.6s;
 }
-.presentation__explore:hover {
+.presentation__sub-title:hover {
   opacity: 0.8;
   box-shadow: 1rem 1rem 20px rgba(0, 0, 0, 0.25);
+  transition: 1s;
+}
+
+/*Fonctionnement*/
+.function__title {
+  margin: 0 0 20px 22px;
+}
+
+.function {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 15px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.function h2 {
+  margin: 0 0 30px 0;
+}
+.function__choice {
+  width: 300px;
+  max-height: 78px;
+  margin-left: 20px;
+  text-align: center;
+  margin: 0 20px 20px 40px;
+  font-weight: bold;
+  background-color: #F6F6F6;
+  padding: 30px 50px 30px 18px;
+  border-radius: 20px;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  transition: 1.6s;
+}
+.function__choice:hover {
+  background-color: #f5edff;
+  transition: 1s;
+}
+.function__choice:hover .fas {
+  color: #9356DC;
+  transition: 1s;
+}
+.function__choice__number {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 30%;
+  left: -4%;
+  padding: 4px 4px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #FFF;
+}
+
+.fas {
+  margin-right: 20px;
+  transition: 1.6s;
 }
 
 /*# sourceMappingURL=style.css.map */
