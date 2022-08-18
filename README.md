@@ -78,18 +78,20 @@ sur desktop au lieu du clic. Si l’intitulé du plat est trop long, il devra ê
 des points de suspension. Un exemple de l’effet attendu est fourni.
 
 
+cheat sheet:
+
 npm run sass
 
 npm run prefix
 
-Ajouter un commit
+Ajouter un commit:
 
 git add . 
 git commit -m “[descriptive message]” 
 git push origin main
 
 
-Supprimer repo origin
+Supprimer repo origin:
 
 git remote rm origin
 
