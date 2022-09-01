@@ -268,7 +268,7 @@ h1 {
 }
 @media screen and (max-width: 330px) {
   .restaurants__card .restaurants__card__content i {
-    left: 10rem;
+    display: none;
   }
 }
 .restaurants__card .restaurants__card__content .far:hover {
