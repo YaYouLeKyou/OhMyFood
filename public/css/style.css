@@ -538,11 +538,12 @@ footer .footer__logo {
 }
 
 .card__price {
-  width: 20px;
+  width: 30px;
   display: flex;
   align-self: flex-end;
   font-weight: bold;
   margin-right: 20px;
+  overflow: hidden;
 }
 
 .header_menu {
@@ -551,15 +552,19 @@ footer .footer__logo {
   flex-direction: column;
   justify-content: space-between;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .header_menu h3 {
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 .header_menu h4 {
   font-weight: normal;
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 /*Bouton Commander*/
