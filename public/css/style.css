@@ -454,7 +454,9 @@ footer .footer__logo {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   padding-left: 16px;
   border-radius: 0.75rem;
-  margin: 1rem 0;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   display: flex;
   overflow: hidden;
 }
