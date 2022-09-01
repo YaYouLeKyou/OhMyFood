@@ -383,7 +383,7 @@ footer .footer__logo {
 
 .card {
   background-color: #F6F6F6;
-  padding: 36px 21px;
+  padding: 36px 20px;
   margin-top: -27px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -398,13 +398,13 @@ footer .footer__logo {
 }
 
 .entrees {
-  margin-bottom: 27px;
+  margin-bottom: 20px;
 }
 .entrees h2::after {
   content: "";
   display: block;
-  width: 43px;
-  height: 3px;
+  width: 40px;
+  height: 4px;
   background: #99E2D0;
 }
 
@@ -570,7 +570,7 @@ footer .footer__logo {
 }
 .bouton__commander--pink {
   background-color: #9356DC;
-  padding: 15px 50px;
+  padding: 16px 50px;
   border-radius: 30px;
   text-align: center;
   font-family: "Roboto", sans-serif;
