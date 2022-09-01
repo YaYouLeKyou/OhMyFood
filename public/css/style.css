@@ -240,33 +240,13 @@ h1 {
 }
 .restaurants__card .restaurants__card__content i {
   position: absolute;
-  left: 22rem;
+  right: 2rem;
   top: 2rem;
   font-size: 1.5rem;
   transform: translateY(-50%);
   transition: ease-out all 0.6s;
 }
-@media screen and (max-width: 460px) {
-  .restaurants__card .restaurants__card__content i {
-    left: 20rem;
-  }
-}
-@media screen and (max-width: 430px) {
-  .restaurants__card .restaurants__card__content i {
-    left: 18rem;
-  }
-}
-@media screen and (max-width: 390px) {
-  .restaurants__card .restaurants__card__content i {
-    left: 16rem;
-  }
-}
-@media screen and (max-width: 360px) {
-  .restaurants__card .restaurants__card__content i {
-    left: 14rem;
-  }
-}
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 320px) {
   .restaurants__card .restaurants__card__content i {
     display: none;
   }
@@ -276,6 +256,7 @@ h1 {
 }
 .restaurants__card .restaurants__card__content .fas {
   color: transparent;
+  right: 0.75rem;
 }
 .restaurants__card .restaurants__card__content i:hover {
   transform: translateY(-50%) scale(1.2);
