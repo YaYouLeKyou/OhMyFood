@@ -56,10 +56,10 @@ h1 {
 /*Animation loader*/
 @keyframes loader {
   0% {
-    opacity: 1;
+    opacity: 0.9;
   }
   50% {
-    opacity: 1;
+    opacity: 0.9;
   }
   100% {
     opacity: 0;
