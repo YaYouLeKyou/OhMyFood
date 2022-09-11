@@ -1,3 +1,8 @@
+:root {
+    --pink-light: #FF79DA;
+    --pink: #9356DC;
+  }
+
 /*Bannière*/
 
 .photo__restaurant {
@@ -8,14 +13,94 @@
         object-position: center;
     }
 }
+//********************************************************************
+.icon {
+    fill: transparent;
+    stroke: black;
+    stroke-width: 40;
+    cursor: pointer;
+    position: relative;
 
+    svg {
+      overflow: visible;
+      width: 1.5rem;
+    }
+  
+    path {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 1550;
+      transform-origin: center;
+    }
+  
+    .heart-background {
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      stroke: none;
+    }
+  
+    .heart-main:hover path {
+      animation: stroke-animation 0.5s ease-in-out forwards;
+    }
+  
+    .heart-main:hover ~ .heart-background path {
+      animation: fade-animation 0.5s ease-in-out forwards;
+    }
+  }
+  
+  @keyframes stroke-animation {
+    0% {
+      stroke: black;
+    }
+    200%{
+        stroke: black;
+        fill: url(#Gradient1);
+        opacity: 0.5;
+
+    }
+    50%{
+        stroke: url(#Gradient1);
+        fill: url(#Gradient1);
+        opacity: 0.5;
+
+    }
+    100% {
+      stroke: url(#Gradient1);
+      fill: url(#Gradient1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-animation {
+    0% {
+      fill: transparent;
+      transform: scale(1);
+    }
+    30% {
+      fill: var(--pink-light);
+      transform: scale(1.5);
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+   
+  //****************************************************
 
 
 /*Carte restaurant*/
 
 .card__title {
     font-family: 'Shrikhand', cursive;
-    max-width: 322px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .fa-heart:before {
