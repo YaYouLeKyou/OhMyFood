@@ -94,13 +94,14 @@
 
     &__title {
         font-weight: bold;
-        font-size: 25px;
-        margin: 20px;
+        font-size: 1.5em;
+        margin: 1rem;
+  
     }
 
     &__sub-title {
         color: rgb(112, 112, 112);
-        margin: 20px;
+        margin: 1rem;
     }
 
     &__explore {
@@ -108,9 +109,10 @@
         text-align: center;
         color: #FFF;
         font-weight: normal;
-        font-size: 15px;
+        font-size: 1em;
         font-family: "Roboto", sans-serif;
-        margin: 20px auto;
+        margin: 1rem auto;
+        margin-bottom: 4rem;
         background-image: linear-gradient($colour-secondary, $colour-primary);
         transition: background-color 250ms;
         box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
@@ -132,6 +134,7 @@
 
 .function__title {
     margin-left: 1rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -220,7 +223,9 @@
     }
 
     &__title {
+        margin-top: 2rem;
         margin-left: 1rem;
+        padding-top: 3rem;
     }
 
     a{
