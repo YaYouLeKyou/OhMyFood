@@ -10,18 +10,16 @@ footer {
     min-width: 320px;
     padding-bottom: 1rem;
 
-    .footer__text {
-        margin: 0 0 10px 20px;
-        color: #e6e6e6;
-        font-weight: normal;
-    }
 
     a {
+        height: 1.5rem;
         font-family: "Roboto", sans-serif;
+        font-size: 1em;
         text-decoration: none;
-        margin: 0;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
+        padding: auto;
+        padding-top: 0.5rem;
+   
+    
     }
 
     a:hover {
@@ -32,7 +30,7 @@ footer {
     .footer__logo {
         font-family: 'Shrikhand', cursive;
         font-weight: normal;
-        font-size: 1.5em;
+        font-size: 1.2em;
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
         margin-left: 1rem;
@@ -41,9 +39,19 @@ footer {
         display: flex;
         flex-direction: row;
         margin-left: 1rem;
-      
+        
     }
+
     .footer-icon{
         width: 1rem;
+        align-items: center;
+        color: white;
+    }
+    
+    .footer__text {
+        margin: 0 0 10px 20px;
+        color: #e6e6e6;
+        font-weight: normal;
+        align-items: center;
     }
 }

@@ -90,8 +90,7 @@
     flex-direction: column;
     text-align: center;
     background-color: #f6f6f6;
-    padding: 40px 40px;
-    margin-bottom: 50px;
+
 
     &__title {
         font-weight: bold;
@@ -161,7 +160,13 @@
         margin-left: 1.5rem;
         margin-right: 1rem;
      
-        
+        @media screen and (min-width:820px) {
+        width: 50%;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+     
+        }
 
         &:hover {
             background-color: #f5edff;
@@ -186,6 +191,7 @@
         }
         .function__icon{
             margin-right: 1rem;
+           
         }
     }
 }
@@ -199,6 +205,21 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+
+        @media screen and (min-width:820px) {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            grid-auto-rows: minmax(100px, auto);
+        }
+        @media screen and (min-width:1280px) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            grid-auto-rows: minmax(100px, auto);
+        }
+     
     }
 
     &__title {
@@ -208,6 +229,12 @@
     a{
         width: 100%;
         margin: 20px;
+        @media screen and (min-width:820px) {
+            margin: 0;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
     }
 
     &__card {
@@ -215,7 +242,15 @@
         background-color: white;
         position: relative;
         width: 100%;
-     
+        margin: auto;
+        @media screen and (min-width:820px) {
+            width: 80%;
+        }
+        @media screen and (min-width:1280px) {
+          width: 80%;
+        }
+
+        
 
         img {
             width: 100%;

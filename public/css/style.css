@@ -105,8 +105,6 @@ body {
   flex-direction: column;
   text-align: center;
   background-color: #f6f6f6;
-  padding: 40px 40px;
-  margin-bottom: 50px;
 }
 .presentation__title {
   font-weight: bold;
@@ -169,6 +167,14 @@ body {
   margin-left: 1.5rem;
   margin-right: 1rem;
 }
+@media screen and (min-width: 820px) {
+  .function__choice {
+    width: 50%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
 .function__choice:hover {
   background-color: #f5edff;
 }
@@ -201,6 +207,23 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+@media screen and (min-width: 820px) {
+  .restaurants__container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .restaurants__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+}
 .restaurants__title {
   margin-left: 1rem;
 }
@@ -208,11 +231,29 @@ body {
   width: 100%;
   margin: 20px;
 }
+@media screen and (min-width: 820px) {
+  .restaurants a {
+    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
 .restaurants__card {
   border-radius: 20px;
   background-color: white;
   position: relative;
   width: 100%;
+  margin: auto;
+}
+@media screen and (min-width: 820px) {
+  .restaurants__card {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .restaurants__card {
+    width: 80%;
+  }
 }
 .restaurants__card img {
   width: 100%;
@@ -358,17 +399,13 @@ footer {
   min-width: 320px;
   padding-bottom: 1rem;
 }
-footer .footer__text {
-  margin: 0 0 10px 20px;
-  color: #e6e6e6;
-  font-weight: normal;
-}
 footer a {
+  height: 1.5rem;
   font-family: "Roboto", sans-serif;
+  font-size: 1em;
   text-decoration: none;
-  margin: 0;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  padding: auto;
+  padding-top: 0.5rem;
 }
 footer a:hover {
   text-decoration: underline;
@@ -377,7 +414,7 @@ footer a:hover {
 footer .footer__logo {
   font-family: "Shrikhand", cursive;
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   margin-left: 1rem;
@@ -389,6 +426,14 @@ footer .footer-logo-text {
 }
 footer .footer-icon {
   width: 1rem;
+  align-items: center;
+  color: white;
+}
+footer .footer__text {
+  margin: 0 0 10px 20px;
+  color: #e6e6e6;
+  font-weight: normal;
+  align-items: center;
 }
 
 /*Bannière*/
