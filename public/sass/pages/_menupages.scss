@@ -1,7 +1,4 @@
-:root {
-    --pink-light: #FF79DA;
-    --pink: #9356DC;
-  }
+//codepen coeur:https://codepen.io/angeladelise/pen/eYJMQzv
 
 /*Bannière*/
 
@@ -13,7 +10,7 @@
         object-position: center;
     }
 }
-//********************************************************************
+/*heart*/
 .icon {
     fill: transparent;
     stroke: black;
@@ -41,45 +38,49 @@
     }
   
     .heart-main:hover path {
-      animation: stroke-animation 0.5s ease-in-out forwards;
+      animation: stroke-animation 0.2s ease-in-out forwards;
     }
   
     .heart-main:hover ~ .heart-background path {
-      animation: fade-animation 0.5s ease-in-out forwards;
+      animation: fade-animation 0.2s ease-in-out forwards;
     }
   }
   
   @keyframes stroke-animation {
     0% {
       stroke: black;
+      transform: scale(0);
     }
-    200%{
-        stroke: black;
+    10%{
+        stroke: url(#Gradient1);
         fill: url(#Gradient1);
         opacity: 0.5;
+        transform: scale(0.1);
 
     }
     50%{
         stroke: url(#Gradient1);
         fill: url(#Gradient1);
         opacity: 0.5;
+        transform: scale(0.5);
 
     }
     100% {
       stroke: url(#Gradient1);
       fill: url(#Gradient1);
       opacity: 1;
+      transform: scale(1);
     }
   }
 
   @keyframes fade-animation {
     0% {
       fill: transparent;
-      transform: scale(1);
+      transform: scale(0);
     }
     30% {
       fill: var(--pink-light);
-      transform: scale(1.5);
+      transform: scale(0.5);
       opacity: 1;
     }
     90% {
@@ -91,8 +92,6 @@
     }
   }
    
-  //****************************************************
-
 
 /*Carte restaurant*/
 
@@ -118,29 +117,28 @@
 
 .card {
     background-color: #F6F6F6;
-    padding: 36px 20px;
-    margin-top: -27px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     position: relative;
     z-index: 1;
+    padding: 1rem;
 
     .far {
         align-self: flex-end;
     }
 
     h2 {
-        margin-bottom: 35px;
+        margin-bottom: 2rem;
     }
 }
 
 .entrees {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 
     h2::after {
         content: '';
         display: block;
-        width: 40px;
+        width: 3rem;
         height: 4px;
         background: $colour-tertiary;
     }
@@ -162,7 +160,7 @@
     animation: fadein 2s;
 
     @media screen and (min-width: 1140px) {
-        margin-right: 10px;
+        margin-right:1rem;
     }
 }
 
@@ -170,7 +168,7 @@
     animation: fadein 4s;
 
     @media screen and (min-width: 1142px) {
-        margin-right: 10px;
+        margin-right: 1rem;
     }
 }
 
@@ -197,6 +195,7 @@
     margin: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
+
     display: flex;
     overflow: hidden;
     
@@ -245,22 +244,18 @@
                 overflow: hidden;
             }
 
-            @media screen and (max-width:405px) {
-                max-width: 130px;
-            }
+          
 
         }
 
         .circle {
+            transition-delay: 250ms;
             transform: rotate(360deg);
         }
 
     }
 
-    @media screen and (min-width: 375px) {
-        min-width: 250px;
-        width: 100%;
-    }
+
 }
 
 
@@ -304,6 +299,7 @@
     font-weight: bold;
     margin-right: 20px;
     overflow: hidden;
+    font-family: 'Roboto', sans-serif;
    
 }
 
@@ -337,7 +333,7 @@
     text-align: center;
     background-color: #F6F6F6;
 
-    &--pink {
+    &--inside {
         background-color: $colour-primary;
         padding: 16px 50px;
         border-radius: 30px;

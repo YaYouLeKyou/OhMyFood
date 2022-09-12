@@ -14,6 +14,7 @@ a {
   max-width: 2560px;
 }
 
+h1,
 h2,
 h3,
 h4,
@@ -27,18 +28,14 @@ body {
   box-sizing: border-box;
 }
 
-.container-all {
-  max-width: 2560px;
+.container {
+  min-width: 320px;
 }
 @media screen and (min-width: 1800px) {
-  .container-all {
+  .container {
     max-width: 1800px;
     margin: auto;
   }
-}
-
-h1 {
-  color: #9356DC;
 }
 
 /*Loader*/
@@ -114,9 +111,11 @@ h1 {
 .presentation__title {
   font-weight: bold;
   font-size: 25px;
+  margin: 20px;
 }
 .presentation__sub-title {
   color: rgb(112, 112, 112);
+  margin: 20px;
 }
 .presentation__explore {
   text-align: center;
@@ -124,7 +123,7 @@ h1 {
   font-weight: normal;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
-  margin: 0 auto;
+  margin: 20px auto;
   background-image: linear-gradient(#FF79DA, #9356DC);
   transition: background-color 250ms;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
@@ -140,8 +139,8 @@ h1 {
 
 /*Fonctionnement*/
 .function__title {
-  margin-left: 32px;
-  margin-bottom: 20px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 .function {
@@ -149,7 +148,7 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 15px;
+  margin: auto;
   font-weight: bold;
   font-size: 15px;
 }
@@ -157,18 +156,18 @@ h1 {
   margin-bottom: 30px;
 }
 .function__choice {
-  width: 300px;
-  max-height: 78px;
-  margin-left: 20px;
+  width: 100%;
   text-align: center;
-  margin: 0 20px 20px 40px;
   font-weight: bold;
   background-color: #F6F6F6;
-  padding: 30px 50px 30px 18px;
+  padding: 2rem;
   border-radius: 20px;
   position: relative;
   font-family: "Roboto", sans-serif;
   transition: 1s;
+  margin: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1rem;
 }
 .function__choice:hover {
   background-color: #f5edff;
@@ -181,19 +180,20 @@ h1 {
   height: 18px;
   position: absolute;
   top: 34%;
-  left: -4%;
+  margin-left: -2.5rem;
   padding: 4px 4px;
   border-radius: 50%;
   background-color: #9356DC;
   color: #FFF;
 }
-
-.fas {
-  margin-right: 20px;
+.function__choice .function__icon {
+  margin-right: 1rem;
 }
 
 .restaurants {
   background-color: #f6f6f6;
+  /*Heart*/
+  /*Button*/
 }
 .restaurants__container {
   display: flex;
@@ -202,10 +202,10 @@ h1 {
   justify-content: center;
 }
 .restaurants__title {
-  margin-left: 32px;
+  margin-left: 1rem;
 }
 .restaurants a {
-  width: 26em;
+  width: 100%;
   margin: 20px;
 }
 .restaurants__card {
@@ -213,11 +213,6 @@ h1 {
   background-color: white;
   position: relative;
   width: 100%;
-}
-@media screen and (min-width: 650px) {
-  .restaurants__card {
-    margin-right: 25px;
-  }
 }
 .restaurants__card img {
   width: 100%;
@@ -230,6 +225,8 @@ h1 {
   padding: 20px 10px;
   position: relative;
   display: flex;
+  justify-content: space-between;
+  margin-right: 1rem;
 }
 .restaurants__card .restaurants__card__content h3 {
   margin-bottom: 6px;
@@ -238,32 +235,76 @@ h1 {
   position: relative;
   left: 1rem;
 }
-.restaurants__card .restaurants__card__content i {
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
-  font-size: 1.5rem;
-  transform: translateY(-50%);
-  transition: ease-out all 0.6s;
+.restaurants .icon {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 40;
+  cursor: pointer;
+  position: relative;
 }
-@media screen and (max-width: 320px) {
-  .restaurants__card .restaurants__card__content i {
-    display: none;
+.restaurants .icon svg {
+  overflow: visible;
+  width: 1.5rem;
+}
+.restaurants .icon path {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 1550;
+  transform-origin: center;
+}
+.restaurants .icon .heart-background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  stroke: none;
+}
+.restaurants .icon .heart-main:hover path {
+  animation: stroke-animation 0.2s ease-in-out forwards;
+}
+.restaurants .icon .heart-main:hover ~ .heart-background path {
+  animation: fade-animation 0.2s ease-in-out forwards;
+}
+@keyframes stroke-animation {
+  0% {
+    stroke: black;
+    transform: scale(0);
+  }
+  10% {
+    stroke: url(#Gradient1);
+    fill: url(#Gradient1);
+    opacity: 0.5;
+    transform: scale(0.1);
+  }
+  50% {
+    stroke: url(#Gradient1);
+    fill: url(#Gradient1);
+    opacity: 0.5;
+    transform: scale(0.5);
+  }
+  100% {
+    stroke: url(#Gradient1);
+    fill: url(#Gradient1);
+    opacity: 1;
+    transform: scale(1);
   }
 }
-.restaurants__card .restaurants__card__content .far:hover {
-  color: transparent;
-}
-.restaurants__card .restaurants__card__content .fas {
-  color: transparent;
-  right: 0.75rem;
-}
-.restaurants__card .restaurants__card__content i:hover {
-  transform: translateY(-50%) scale(1.2);
-  background-image: linear-gradient(163deg, rgb(238, 115, 218) 0%, rgb(160, 91, 220) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 1;
+@keyframes fade-animation {
+  0% {
+    fill: transparent;
+    transform: scale(0);
+  }
+  30% {
+    fill: var(--pink-light);
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
 }
 .restaurants .btn-new {
   background-color: #99E2D0;
@@ -313,17 +354,21 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 25px 0px;
   max-width: 100%;
   min-width: 320px;
+  padding-bottom: 1rem;
 }
-footer h3 {
+footer .footer__text {
   margin: 0 0 10px 20px;
   color: #e6e6e6;
   font-weight: normal;
 }
 footer a {
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 footer a:hover {
   text-decoration: underline;
@@ -332,13 +377,18 @@ footer a:hover {
 footer .footer__logo {
   font-family: "Shrikhand", cursive;
   font-weight: normal;
-  font-size: 20px;
-  margin-bottom: 15px;
+  font-size: 1.5em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
 }
-
-:root {
-  --pink-light: #FF79DA;
-  --pink: #9356DC;
+footer .footer-logo-text {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+}
+footer .footer-icon {
+  width: 1rem;
 }
 
 /*Bannière*/
@@ -349,6 +399,7 @@ footer .footer__logo {
   object-position: center;
 }
 
+/*heart*/
 .icon {
   fill: transparent;
   stroke: black;
@@ -373,40 +424,44 @@ footer .footer__logo {
   stroke: none;
 }
 .icon .heart-main:hover path {
-  animation: stroke-animation 0.5s ease-in-out forwards;
+  animation: stroke-animation 0.2s ease-in-out forwards;
 }
 .icon .heart-main:hover ~ .heart-background path {
-  animation: fade-animation 0.5s ease-in-out forwards;
+  animation: fade-animation 0.2s ease-in-out forwards;
 }
 
 @keyframes stroke-animation {
   0% {
     stroke: black;
+    transform: scale(0);
   }
-  200% {
-    stroke: black;
+  10% {
+    stroke: url(#Gradient1);
     fill: url(#Gradient1);
     opacity: 0.5;
+    transform: scale(0.1);
   }
   50% {
     stroke: url(#Gradient1);
     fill: url(#Gradient1);
     opacity: 0.5;
+    transform: scale(0.5);
   }
   100% {
     stroke: url(#Gradient1);
     fill: url(#Gradient1);
     opacity: 1;
+    transform: scale(1);
   }
 }
 @keyframes fade-animation {
   0% {
     fill: transparent;
-    transform: scale(1);
+    transform: scale(0);
   }
   30% {
     fill: var(--pink-light);
-    transform: scale(1.5);
+    transform: scale(0.5);
     opacity: 1;
   }
   90% {
@@ -439,27 +494,26 @@ footer .footer__logo {
 
 .card {
   background-color: #F6F6F6;
-  padding: 36px 20px;
-  margin-top: -27px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   position: relative;
   z-index: 1;
+  padding: 1rem;
 }
 .card .far {
   align-self: flex-end;
 }
 .card h2 {
-  margin-bottom: 35px;
+  margin-bottom: 2rem;
 }
 
 .entrees {
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 .entrees h2::after {
   content: "";
   display: block;
-  width: 40px;
+  width: 3rem;
   height: 4px;
   background: #99E2D0;
 }
@@ -479,7 +533,7 @@ footer .footer__logo {
 }
 @media screen and (min-width: 1140px) {
   .card__global__entrees {
-    margin-right: 10px;
+    margin-right: 1rem;
   }
 }
 
@@ -488,7 +542,7 @@ footer .footer__logo {
 }
 @media screen and (min-width: 1142px) {
   .card__global__plats {
-    margin-right: 10px;
+    margin-right: 1rem;
   }
 }
 
@@ -550,19 +604,9 @@ footer .footer__logo {
   white-space: nowrap;
   overflow: hidden;
 }
-@media screen and (max-width: 405px) {
-  .card__global__contenu:hover .header_menu {
-    max-width: 130px;
-  }
-}
 .card__global__contenu:hover .circle {
+  transition-delay: 250ms;
   transform: rotate(360deg);
-}
-@media screen and (min-width: 375px) {
-  .card__global__contenu {
-    min-width: 250px;
-    width: 100%;
-  }
 }
 
 .card__global__contenu__dish__confirmation {
@@ -602,6 +646,7 @@ footer .footer__logo {
   font-weight: bold;
   margin-right: 20px;
   overflow: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
 .header_menu {
@@ -631,7 +676,7 @@ footer .footer__logo {
   text-align: center;
   background-color: #F6F6F6;
 }
-.bouton__commander--pink {
+.bouton__commander--inside {
   background-color: #9356DC;
   padding: 16px 50px;
   border-radius: 30px;
@@ -645,7 +690,7 @@ footer .footer__logo {
   transition: background-color 250ms;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
-.bouton__commander--pink:hover {
+.bouton__commander--inside:hover {
   opacity: 0.8;
   box-shadow: 1rem 1rem 20px rgba(0, 0, 0, 0.25);
 }
