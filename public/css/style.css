@@ -135,6 +135,10 @@ body {
   transition: 1s;
 }
 
+.location-icon {
+  margin-right: 1.5rem;
+}
+
 /*Fonctionnement*/
 .function__title {
   margin-left: 1rem;
@@ -175,12 +179,6 @@ body {
     margin-bottom: 2rem;
   }
 }
-.function__choice:hover {
-  background-color: #f5edff;
-}
-.function__choice:hover .fas {
-  color: #9356DC;
-}
 .function__choice__number {
   width: 18px;
   height: 18px;
@@ -194,6 +192,10 @@ body {
 }
 .function__choice .function__icon {
   margin-right: 1rem;
+}
+
+.bg-color {
+  background-color: #F7F1FF;
 }
 
 .restaurants {

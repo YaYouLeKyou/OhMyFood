@@ -125,6 +125,9 @@
         }
     }
 }
+.location-icon{
+    margin-right: 1.5rem;
+}
 /*Fonctionnement*/
 
 .function__title {
@@ -168,14 +171,6 @@
      
         }
 
-        &:hover {
-            background-color: #f5edff;
-
-            .fas {
-                color: $colour-primary;
-               
-            }
-        }
 
         &__number {
             width: 18px;
@@ -195,7 +190,9 @@
         }
     }
 }
-
+.bg-color{
+    background-color: #F7F1FF;
+}
 
 .restaurants {
     background-color: #f6f6f6;
