@@ -142,6 +142,7 @@ body {
 
 /*Fonctionnement*/
 .function__title {
+  width: 100%;
   margin-left: 1rem;
   margin-top: 3rem;
 }
@@ -158,7 +159,7 @@ body {
 .function h2 {
   margin-bottom: 1rem;
 }
-.function__choice {
+.function__order {
   width: 100%;
   text-align: center;
   font-weight: bold;
@@ -173,14 +174,14 @@ body {
   margin-right: 1rem;
 }
 @media screen and (min-width: 820px) {
-  .function__choice {
+  .function__order {
     width: 50%;
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
 }
-.function__choice__number {
+.function__order__number {
   width: 18px;
   height: 18px;
   position: absolute;
@@ -191,7 +192,7 @@ body {
   background-color: #9356DC;
   color: #FFF;
 }
-.function__choice .function__icon {
+.function__order .function__icon {
   margin-right: 1rem;
 }
 
