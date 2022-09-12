@@ -143,8 +143,7 @@ body {
 /*Fonctionnement*/
 .function__title {
   margin-left: 1rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 3rem;
 }
 
 .function {
@@ -157,7 +156,7 @@ body {
   font-size: 15px;
 }
 .function h2 {
-  margin-bottom: 30px;
+  margin-bottom: 1rem;
 }
 .function__choice {
   width: 100%;
@@ -280,7 +279,7 @@ body {
 }
 .restaurants__card .restaurants__card__content .restaurants_card__content__name {
   position: relative;
-  left: 1rem;
+  left: 0.5rem;
 }
 .restaurants .icon {
   fill: transparent;
