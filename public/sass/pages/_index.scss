@@ -326,22 +326,22 @@
       transform: scale(0);
     }
     10%{
-        stroke: url(#Gradient1);
-        fill: url(#Gradient1);
+        stroke: url(#Gradient2);
+        fill: url(#Gradient2);
         opacity: 0.5;
         transform: scale(0.1);
 
     }
     50%{
-        stroke: url(#Gradient1);
-        fill: url(#Gradient1);
+        stroke: url(#Gradient2);
+        fill: url(#Gradient2);
         opacity: 0.5;
         transform: scale(0.5);
 
     }
     100% {
-      stroke: url(#Gradient1);
-      fill: url(#Gradient1);
+      stroke: url(#Gradient2);
+      fill: url(#Gradient2);
       opacity: 1;
       transform: scale(1);
     }
