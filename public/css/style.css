@@ -523,11 +523,14 @@ footer .footer__text {
   }
 }
 /*Carte restaurant*/
+.card__title__icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .card__title {
   font-family: "Shrikhand", cursive;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
 
 .fa-heart:before {
