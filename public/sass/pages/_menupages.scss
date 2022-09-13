@@ -10,6 +10,7 @@
         object-position: center;
     }
 }
+
 /*heart*/
 .icon {
     fill: transparent;
@@ -19,86 +20,93 @@
     position: relative;
 
     svg {
-      overflow: visible;
-      width: 1.5rem;
+        overflow: visible;
+        width: 1.5rem;
     }
-  
+
     path {
-      stroke-dashoffset: 0;
-      stroke-dasharray: 1550;
-      transform-origin: center;
+        stroke-dashoffset: 0;
+        stroke-dasharray: 1550;
+        transform-origin: center;
     }
-  
+
     .heart-background {
-      position: absolute;
-      left: 0;
-      right: 0;
-      z-index: -1;
-      stroke: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        stroke: none;
     }
-  
+
     .heart-main:hover path {
-      animation: stroke-animation 0.2s ease-in-out forwards;
+        animation: stroke-animation 0.2s ease-in-out forwards;
     }
-  
-    .heart-main:hover ~ .heart-background path {
-      animation: fade-animation 0.2s ease-in-out forwards;
+
+    .heart-main:hover~.heart-background path {
+        animation: fade-animation 0.2s ease-in-out forwards;
     }
-  }
-  
-  @keyframes stroke-animation {
+}
+
+@keyframes stroke-animation {
     0% {
-      stroke: black;
-      transform: scale(0);
+        stroke: black;
+        transform: scale(0);
     }
-    10%{
+
+    10% {
         stroke: url(#Gradient2);
         fill: url(#Gradient2);
         opacity: 0.5;
         transform: scale(0.1);
 
     }
-    50%{
+
+    50% {
         stroke: url(#Gradient2);
         fill: url(#Gradient2);
         opacity: 0.5;
         transform: scale(0.5);
 
     }
-    100% {
-      stroke: url(#Gradient2);
-      fill: url(#Gradient2);
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
 
-  @keyframes fade-animation {
-    0% {
-      fill: transparent;
-      transform: scale(0);
-    }
-    30% {
-      fill: var(--pink-light);
-      transform: scale(0.5);
-      opacity: 1;
-    }
-    90% {
-      opacity: 1;
-    }
     100% {
-      transform: scale(1);
-      opacity: 0;
+        stroke: url(#Gradient2);
+        fill: url(#Gradient2);
+        opacity: 1;
+        transform: scale(1);
     }
-  }
-   
+}
+
+@keyframes fade-animation {
+    0% {
+        fill: transparent;
+        transform: scale(0);
+    }
+
+    30% {
+        fill: var(--pink-light);
+        transform: scale(0.5);
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
 
 /*Carte restaurant*/
-.card__title__icon{
+.card__title__icon {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .card__title {
     font-family: 'Shrikhand', cursive;
 }
@@ -108,7 +116,7 @@
 }
 
 .card__global {
-  
+
     @media screen and (min-width: 1024px) {
         display: flex;
         flex-wrap: wrap;
@@ -161,7 +169,7 @@
     animation: fadein 2s;
 
     @media screen and (min-width: 1140px) {
-        margin-right:1rem;
+        margin-right: 1rem;
     }
 }
 
@@ -199,7 +207,7 @@
 
     display: flex;
     overflow: hidden;
-    
+
 
     &__dish {
         width: 25rem;
@@ -210,7 +218,7 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-        
+
 
         h3 {
             font-size: 16px;
@@ -219,14 +227,14 @@
         h4 {
             font-size: 16px;
         }
-        
+
     }
 
     &:hover {
         .card__global__contenu__dish__confirmation {
             margin-right: 0px;
             min-width: 4rem;
-       
+
         }
 
         .header_menu {
@@ -245,7 +253,7 @@
                 overflow: hidden;
             }
 
-          
+
 
         }
 
@@ -301,7 +309,7 @@
     margin-right: 20px;
     overflow: hidden;
     font-family: 'Roboto', sans-serif;
-   
+
 }
 
 .header_menu {
