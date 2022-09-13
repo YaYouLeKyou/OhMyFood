@@ -168,7 +168,7 @@
 .card__global__entrees {
     animation: fadein 2s;
 
-    @media screen and (min-width: 1140px) {
+    @media screen and (min-width: 820px) {
         margin-right: 1rem;
     }
 }
@@ -176,13 +176,16 @@
 .card__global__plats {
     animation: fadein 4s;
 
-    @media screen and (min-width: 1142px) {
+    @media screen and (min-width: 820px) {
         margin-right: 1rem;
     }
 }
 
 .card__global__desserts {
     animation: fadein 6s;
+    @media screen and (min-width: 820px) {
+        margin-right: 1rem;
+    }
 }
 
 .card__global__entrees,
@@ -199,7 +202,7 @@
     max-width: 25rem;
     height: 70px;
     box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
-    padding-left: 16px;
+    padding-left: 1rem;
     border-radius: .75rem;
     margin: auto;
     margin-top: 1rem;

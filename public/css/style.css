@@ -580,7 +580,7 @@ footer .footer__text {
 .card__global__entrees {
   animation: fadein 2s;
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 820px) {
   .card__global__entrees {
     margin-right: 1rem;
   }
@@ -589,7 +589,7 @@ footer .footer__text {
 .card__global__plats {
   animation: fadein 4s;
 }
-@media screen and (min-width: 1142px) {
+@media screen and (min-width: 820px) {
   .card__global__plats {
     margin-right: 1rem;
   }
@@ -597,6 +597,11 @@ footer .footer__text {
 
 .card__global__desserts {
   animation: fadein 6s;
+}
+@media screen and (min-width: 820px) {
+  .card__global__desserts {
+    margin-right: 1rem;
+  }
 }
 
 .card__global__entrees h2,
@@ -611,7 +616,7 @@ footer .footer__text {
   max-width: 25rem;
   height: 70px;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-  padding-left: 16px;
+  padding-left: 1rem;
   border-radius: 0.75rem;
   margin: auto;
   margin-top: 1rem;
