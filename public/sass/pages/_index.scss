@@ -82,6 +82,8 @@
     padding: 20px 0;
     font-weight: bold;
     width: 100%;
+    border-top: 1px solid rgb(199, 199, 199);
+    box-shadow: inset 0px 2px 2px rgb(204, 204, 204);
 }
 
 .presentation {
@@ -89,38 +91,47 @@
     flex-direction: column;
     text-align: center;
     background-color: #f6f6f6;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 
 
     &__title {
         font-weight: bold;
         font-size: 1.5em;
-        margin: 1rem;
+
 
     }
 
     &__sub-title {
         color: rgb(112, 112, 112);
-        margin: 1rem;
+        margin: 0;
+
+        @-moz-document url-prefix() {
+            margin: 1rem;
+        }
+
     }
 
     &__explore {
-
+        padding: .75rem 1.5rem;
+        border-radius: 30px;
         text-align: center;
         color: #FFF;
         font-weight: normal;
-        font-size: 1em;
+        font-size: 15px;
         font-family: "Roboto", sans-serif;
         margin: 1rem auto;
-        margin-bottom: 4rem;
         background-image: linear-gradient($colour-secondary, $colour-primary);
         transition: background-color 250ms;
         box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
-        padding: .75rem 1.5rem;
-        border-radius: 30px;
-        transition: 1.6s;
 
-
+        &:hover {
+            opacity: 0.8;
+            box-shadow: 1rem 1rem 20px rgb(0 0 0 / 25%);
+        }
     }
+
+
 }
 
 .location-icon {
@@ -133,6 +144,7 @@
     width: 100%;
     margin-left: 1rem;
     margin-top: 3rem;
+    margin-bottom: 1rem;
 
 
 }
@@ -141,19 +153,19 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin: auto;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 1em;
+    max-width: 500px;
 
 
-    h2 {
-        margin-bottom: 1rem;
-    }
+
 
     &__order {
-        width: 100%;
-        text-align: center;
+        width: 60%;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         font-weight: bold;
         background-color: #F6F6F6;
         padding: 2rem;
@@ -161,12 +173,10 @@
         position: relative;
         font-family: 'Roboto', sans-serif;
         transition: 1s;
-        margin: 1rem;
-        margin-left: 1.5rem;
-        margin-right: 1rem;
+
 
         @media screen and (min-width:820px) {
-            width: 50%;
+            width: 60%;
             margin: auto;
             margin-top: 2rem;
             margin-bottom: 2rem;
@@ -184,15 +194,28 @@
             border-radius: 50%;
             background-color: $colour-primary;
             color: #FFF;
+            text-align: center;
 
         }
 
-        .function__icon {
-            margin-right: 1rem;
+    }
 
-        }
+    &__icon {
+        margin-left: 1rem;
+
+    }
+
+    .fa-store {
+        color: $colour-primary;
     }
 }
+
+.function-text {
+    margin-left: 1rem;
+    overflow: hidden;
+
+}
+
 
 .bg-color {
     background-color: #F7F1FF;
