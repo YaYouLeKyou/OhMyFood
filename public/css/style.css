@@ -740,7 +740,9 @@ footer .footer__text {
 
 /*Bouton Commander*/
 .bouton__commander {
-  padding: 30px 0 80px 0;
+  margin: auto;
+  justify-content: center;
+  padding: 60px 0 80px 0;
   text-align: center;
   background-color: #F6F6F6;
 }

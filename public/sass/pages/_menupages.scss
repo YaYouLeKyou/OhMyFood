@@ -183,6 +183,7 @@
 
 .card__global__desserts {
     animation: fadein 6s;
+
     @media screen and (min-width: 820px) {
         margin-right: 1rem;
     }
@@ -341,7 +342,10 @@
 /*Bouton Commander*/
 
 .bouton__commander {
-    padding: 30px 0 80px 0;
+
+    margin: auto;
+    justify-content: center;
+    padding: 60px 0 80px 0;
     text-align: center;
     background-color: #F6F6F6;
 
